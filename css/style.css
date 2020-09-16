@@ -75,6 +75,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
     padding: 26px 0;
     background-color: #000000;
 }
@@ -187,3 +188,84 @@ body{
     border: 1px solid red;
 }
 
+.hero-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-item{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+    align-items: flex-start;
+    overflow: hidden;
+    width: 370px;
+    border-radius: 3px;
+    padding: 30px 20px;
+}
+
+.hero-item-active{
+    height: 560px;
+    order: -1;
+}
+
+
+.hero-item-link{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-decoration: none;
+    margin-top: 0;
+    display: inline-block;
+    margin-bottom: auto;
+    padding: 3px 12px;
+    background-color: #4A90E2;
+    border-radius: 3px;
+    color: #FFFFFF;
+}
+
+.info-hero-item{
+    font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 18px;
+margin-top: 0;
+margin-bottom: 6px;
+color: #FFFFFF;
+max-width: 100%;
+}
+
+.heading-hero-item{
+    font-style: normal;
+font-weight: bold;
+margin:0;
+
+color: #FFFFFF;
+
+}
+
+.heading-hero-item-active{
+    font-size: 26px;
+line-height: 36px;
+/* or 138% */
+
+}
+
+.bach-car-image{
+    
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+}
+
+.hero-item-active .back-car-img-active{
+    height: 100%;
+    width: auto;
+}
