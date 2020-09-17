@@ -178,8 +178,11 @@ body{
     border-radius: 15px;
 }
 
-.search-input:not(:placeholder-shown):valid 
-{
+.search-label:not(:hover) .search-input:not(:placeholder-shown):valid{
+    border: 1px solid transparent;
+}
+
+.search-input:not(:placeholder-shown):valid{
     color: green;
     border: 1px solid green;
 }
